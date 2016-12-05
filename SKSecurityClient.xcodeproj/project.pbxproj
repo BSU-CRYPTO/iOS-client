@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F8E57E71DD08C1B00F84204 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E57E61DD08C1B00F84204 /* main.m */; };
+		3F8E57F01DD08C1B00F84204 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8E57EE1DD08C1B00F84204 /* Main.storyboard */; };
+		3F8E57F21DD08C1B00F84204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F8E57F11DD08C1B00F84204 /* Assets.xcassets */; };
+		3F8E57F51DD08C1B00F84204 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8E57F31DD08C1B00F84204 /* LaunchScreen.storyboard */; };
+		3F8E58001DD08C1C00F84204 /* SKSecurityClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E57FF1DD08C1C00F84204 /* SKSecurityClientTests.m */; };
+		3F8E580B1DD08C1C00F84204 /* SKSecurityClientUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E580A1DD08C1C00F84204 /* SKSecurityClientUITests.m */; };
+		3F8E583C1DD090A200F84204 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E582F1DD090A200F84204 /* AppDelegate.m */; };
+		3F8E583D1DD090A200F84204 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E58351DD090A200F84204 /* ViewController.m */; };
+		3F8E58451DD0922400F84204 /* BBAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E58411DD0922400F84204 /* BBAES.m */; };
+		3F8E584A1DD0A2C400F84204 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E58491DD0A2C400F84204 /* NSData+Base64.m */; };
+		3F8E584E1DD0A52900F84204 /* SKNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E584D1DD0A52900F84204 /* SKNetworkManager.m */; };
+		3F8E58561DD0B5CF00F84204 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E58551DD0B5CF00F84204 /* RSA.m */; };
+		556F67B0C79016BC4214B486 /* Pods_SKSecurityClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABEC437F96C4B39647127B40 /* Pods_SKSecurityClientTests.framework */; };
+		A14F1BCF06E552943E31A280 /* Pods_SKSecurityClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4DFBDDCEEB4AB4D355FE1F /* Pods_SKSecurityClient.framework */; };
+		F422AD42739D00ED9E3C850C /* Pods_SKSecurityClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A3E5CBE4C8ABD896DEA675 /* Pods_SKSecurityClientUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F8E57FC1DD08C1C00F84204 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F8E57DA1DD08C1B00F84204 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F8E57E11DD08C1B00F84204;
+			remoteInfo = SKSecurityClient;
+		};
+		3F8E58071DD08C1C00F84204 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F8E57DA1DD08C1B00F84204 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F8E57E11DD08C1B00F84204;
+			remoteInfo = SKSecurityClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F8E57E21DD08C1B00F84204 /* SKSecurityClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKSecurityClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8E57E61DD08C1B00F84204 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F8E57EF1DD08C1B00F84204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F8E57F11DD08C1B00F84204 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F8E57F41DD08C1B00F84204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F8E57F61DD08C1B00F84204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F8E57FB1DD08C1C00F84204 /* SKSecurityClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKSecurityClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8E57FF1DD08C1C00F84204 /* SKSecurityClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSecurityClientTests.m; sourceTree = "<group>"; };
+		3F8E58011DD08C1C00F84204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F8E58061DD08C1C00F84204 /* SKSecurityClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKSecurityClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8E580A1DD08C1C00F84204 /* SKSecurityClientUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSecurityClientUITests.m; sourceTree = "<group>"; };
+		3F8E580C1DD08C1C00F84204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F8E582E1DD090A200F84204 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F8E582F1DD090A200F84204 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F8E58341DD090A200F84204 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3F8E58351DD090A200F84204 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3F8E58401DD0922400F84204 /* BBAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAES.h; sourceTree = "<group>"; };
+		3F8E58411DD0922400F84204 /* BBAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBAES.m; sourceTree = "<group>"; };
+		3F8E58481DD0A2C400F84204 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		3F8E58491DD0A2C400F84204 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		3F8E584C1DD0A52900F84204 /* SKNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKNetworkManager.h; sourceTree = "<group>"; };
+		3F8E584D1DD0A52900F84204 /* SKNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKNetworkManager.m; sourceTree = "<group>"; };
+		3F8E58541DD0B5CF00F84204 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		3F8E58551DD0B5CF00F84204 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		476DA140B1E888CD029D0DEF /* Pods-SKSecurityClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKSecurityClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKSecurityClientTests/Pods-SKSecurityClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		53FC6729EBDC569B5777A115 /* Pods-SKSecurityClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKSecurityClientUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SKSecurityClientUITests/Pods-SKSecurityClientUITests.release.xcconfig"; sourceTree = "<group>"; };
+		602FFB8F78B5EA0817ABAEE3 /* Pods-SKSecurityClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKSecurityClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKSecurityClient/Pods-SKSecurityClient.debug.xcconfig"; sourceTree = "<group>"; };
+		699692A27B5F858459584A88 /* Pods-SKSecurityClientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKSecurityClientUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKSecurityClientUITests/Pods-SKSecurityClientUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7809CF597778FB4CCF5949A2 /* Pods-SKSecurityClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKSecurityClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-SKSecurityClient/Pods-SKSecurityClient.release.xcconfig"; sourceTree = "<group>"; };
+		ABEC437F96C4B39647127B40 /* Pods_SKSecurityClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKSecurityClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2A3E5CBE4C8ABD896DEA675 /* Pods_SKSecurityClientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKSecurityClientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4DFBDDCEEB4AB4D355FE1F /* Pods_SKSecurityClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKSecurityClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF5ED00D2EF79338EAB7683B /* Pods-SKSecurityClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKSecurityClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SKSecurityClientTests/Pods-SKSecurityClientTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F8E57DF1DD08C1B00F84204 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14F1BCF06E552943E31A280 /* Pods_SKSecurityClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F8E57F81DD08C1C00F84204 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556F67B0C79016BC4214B486 /* Pods_SKSecurityClientTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F8E58031DD08C1C00F84204 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F422AD42739D00ED9E3C850C /* Pods_SKSecurityClientUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F8E57D91DD08C1B00F84204 = {
+			isa = PBXGroup;
+			children = (
+				3F8E57E41DD08C1B00F84204 /* SKSecurityClient */,
+				3F8E57FE1DD08C1C00F84204 /* SKSecurityClientTests */,
+				3F8E58091DD08C1C00F84204 /* SKSecurityClientUITests */,
+				3F8E57E31DD08C1B00F84204 /* Products */,
+				7F8FDFB048B235474298B1EC /* Pods */,
+				54B6514DA8D59BFC2E1BA757 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3F8E57E31DD08C1B00F84204 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E57E21DD08C1B00F84204 /* SKSecurityClient.app */,
+				3F8E57FB1DD08C1C00F84204 /* SKSecurityClientTests.xctest */,
+				3F8E58061DD08C1C00F84204 /* SKSecurityClientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F8E57E41DD08C1B00F84204 /* SKSecurityClient */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E582D1DD090A200F84204 /* AppDelegate */,
+				3F8E58301DD090A200F84204 /* Core */,
+				3F8E58321DD090A200F84204 /* MVC */,
+				3F8E58381DD090A200F84204 /* Support */,
+				3F8E57EE1DD08C1B00F84204 /* Main.storyboard */,
+				3F8E57F11DD08C1B00F84204 /* Assets.xcassets */,
+				3F8E57F31DD08C1B00F84204 /* LaunchScreen.storyboard */,
+				3F8E57F61DD08C1B00F84204 /* Info.plist */,
+				3F8E57E51DD08C1B00F84204 /* Supporting Files */,
+			);
+			path = SKSecurityClient;
+			sourceTree = "<group>";
+		};
+		3F8E57E51DD08C1B00F84204 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E57E61DD08C1B00F84204 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F8E57FE1DD08C1C00F84204 /* SKSecurityClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E57FF1DD08C1C00F84204 /* SKSecurityClientTests.m */,
+				3F8E58011DD08C1C00F84204 /* Info.plist */,
+			);
+			path = SKSecurityClientTests;
+			sourceTree = "<group>";
+		};
+		3F8E58091DD08C1C00F84204 /* SKSecurityClientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E580A1DD08C1C00F84204 /* SKSecurityClientUITests.m */,
+				3F8E580C1DD08C1C00F84204 /* Info.plist */,
+			);
+			path = SKSecurityClientUITests;
+			sourceTree = "<group>";
+		};
+		3F8E582D1DD090A200F84204 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E582E1DD090A200F84204 /* AppDelegate.h */,
+				3F8E582F1DD090A200F84204 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3F8E58301DD090A200F84204 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E58311DD090A200F84204 /* Managers */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3F8E58311DD090A200F84204 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E584B1DD0A50F00F84204 /* NetworkManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		3F8E58321DD090A200F84204 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E58331DD090A200F84204 /* Controller */,
+				3F8E58361DD090A200F84204 /* Model */,
+				3F8E58371DD090A200F84204 /* View */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		3F8E58331DD090A200F84204 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E58341DD090A200F84204 /* ViewController.h */,
+				3F8E58351DD090A200F84204 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3F8E58361DD090A200F84204 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F8E58371DD090A200F84204 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F8E58381DD090A200F84204 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E58471DD0A2C400F84204 /* Extensions */,
+				3F8E58391DD090A200F84204 /* Libraries */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		3F8E58391DD090A200F84204 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E583F1DD0922400F84204 /* AES */,
+				3F8E58421DD0922400F84204 /* RSA */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		3F8E583F1DD0922400F84204 /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E58401DD0922400F84204 /* BBAES.h */,
+				3F8E58411DD0922400F84204 /* BBAES.m */,
+			);
+			path = AES;
+			sourceTree = "<group>";
+		};
+		3F8E58421DD0922400F84204 /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E58531DD0B5CF00F84204 /* RSA1 */,
+			);
+			path = RSA;
+			sourceTree = "<group>";
+		};
+		3F8E58471DD0A2C400F84204 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E58481DD0A2C400F84204 /* NSData+Base64.h */,
+				3F8E58491DD0A2C400F84204 /* NSData+Base64.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3F8E584B1DD0A50F00F84204 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E584C1DD0A52900F84204 /* SKNetworkManager.h */,
+				3F8E584D1DD0A52900F84204 /* SKNetworkManager.m */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		3F8E58531DD0B5CF00F84204 /* RSA1 */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E58541DD0B5CF00F84204 /* RSA.h */,
+				3F8E58551DD0B5CF00F84204 /* RSA.m */,
+			);
+			path = RSA1;
+			sourceTree = "<group>";
+		};
+		54B6514DA8D59BFC2E1BA757 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD4DFBDDCEEB4AB4D355FE1F /* Pods_SKSecurityClient.framework */,
+				ABEC437F96C4B39647127B40 /* Pods_SKSecurityClientTests.framework */,
+				C2A3E5CBE4C8ABD896DEA675 /* Pods_SKSecurityClientUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F8FDFB048B235474298B1EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				602FFB8F78B5EA0817ABAEE3 /* Pods-SKSecurityClient.debug.xcconfig */,
+				7809CF597778FB4CCF5949A2 /* Pods-SKSecurityClient.release.xcconfig */,
+				476DA140B1E888CD029D0DEF /* Pods-SKSecurityClientTests.debug.xcconfig */,
+				CF5ED00D2EF79338EAB7683B /* Pods-SKSecurityClientTests.release.xcconfig */,
+				699692A27B5F858459584A88 /* Pods-SKSecurityClientUITests.debug.xcconfig */,
+				53FC6729EBDC569B5777A115 /* Pods-SKSecurityClientUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F8E57E11DD08C1B00F84204 /* SKSecurityClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F8E580F1DD08C1C00F84204 /* Build configuration list for PBXNativeTarget "SKSecurityClient" */;
+			buildPhases = (
+				5B4FEFCA7F9B152EA6A0AACE /* [CP] Check Pods Manifest.lock */,
+				3F8E57DE1DD08C1B00F84204 /* Sources */,
+				3F8E57DF1DD08C1B00F84204 /* Frameworks */,
+				3F8E57E01DD08C1B00F84204 /* Resources */,
+				44DE52DFB7FEA9BD077D50B6 /* [CP] Embed Pods Frameworks */,
+				BC338AAE04D6980F82220266 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SKSecurityClient;
+			productName = SKSecurityClient;
+			productReference = 3F8E57E21DD08C1B00F84204 /* SKSecurityClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F8E57FA1DD08C1C00F84204 /* SKSecurityClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F8E58121DD08C1C00F84204 /* Build configuration list for PBXNativeTarget "SKSecurityClientTests" */;
+			buildPhases = (
+				7AC655AC95BDA22E4D9DEEB9 /* [CP] Check Pods Manifest.lock */,
+				3F8E57F71DD08C1C00F84204 /* Sources */,
+				3F8E57F81DD08C1C00F84204 /* Frameworks */,
+				3F8E57F91DD08C1C00F84204 /* Resources */,
+				47F6E79E9618A3A7FED1FCC1 /* [CP] Embed Pods Frameworks */,
+				C5A7A43EC75B8638AB507DC2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F8E57FD1DD08C1C00F84204 /* PBXTargetDependency */,
+			);
+			name = SKSecurityClientTests;
+			productName = SKSecurityClientTests;
+			productReference = 3F8E57FB1DD08C1C00F84204 /* SKSecurityClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F8E58051DD08C1C00F84204 /* SKSecurityClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F8E58151DD08C1C00F84204 /* Build configuration list for PBXNativeTarget "SKSecurityClientUITests" */;
+			buildPhases = (
+				957017EA070A42E3F0CA6DF0 /* [CP] Check Pods Manifest.lock */,
+				3F8E58021DD08C1C00F84204 /* Sources */,
+				3F8E58031DD08C1C00F84204 /* Frameworks */,
+				3F8E58041DD08C1C00F84204 /* Resources */,
+				DF658D96371E86BCB6C2FCDD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F8E58081DD08C1C00F84204 /* PBXTargetDependency */,
+			);
+			name = SKSecurityClientUITests;
+			productName = SKSecurityClientUITests;
+			productReference = 3F8E58061DD08C1C00F84204 /* SKSecurityClientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F8E57DA1DD08C1B00F84204 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				TargetAttributes = {
+					3F8E57E11DD08C1B00F84204 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					3F8E57FA1DD08C1C00F84204 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F8E57E11DD08C1B00F84204;
+					};
+					3F8E58051DD08C1C00F84204 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F8E57E11DD08C1B00F84204;
+					};
+				};
+			};
+			buildConfigurationList = 3F8E57DD1DD08C1B00F84204 /* Build configuration list for PBXProject "SKSecurityClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F8E57D91DD08C1B00F84204;
+			productRefGroup = 3F8E57E31DD08C1B00F84204 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F8E57E11DD08C1B00F84204 /* SKSecurityClient */,
+				3F8E57FA1DD08C1C00F84204 /* SKSecurityClientTests */,
+				3F8E58051DD08C1C00F84204 /* SKSecurityClientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F8E57E01DD08C1B00F84204 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8E57F51DD08C1B00F84204 /* LaunchScreen.storyboard in Resources */,
+				3F8E57F21DD08C1B00F84204 /* Assets.xcassets in Resources */,
+				3F8E57F01DD08C1B00F84204 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F8E57F91DD08C1C00F84204 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F8E58041DD08C1C00F84204 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44DE52DFB7FEA9BD077D50B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKSecurityClient/Pods-SKSecurityClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47F6E79E9618A3A7FED1FCC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKSecurityClientTests/Pods-SKSecurityClientTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B4FEFCA7F9B152EA6A0AACE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7AC655AC95BDA22E4D9DEEB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		957017EA070A42E3F0CA6DF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC338AAE04D6980F82220266 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKSecurityClient/Pods-SKSecurityClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5A7A43EC75B8638AB507DC2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKSecurityClientTests/Pods-SKSecurityClientTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF658D96371E86BCB6C2FCDD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKSecurityClientUITests/Pods-SKSecurityClientUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F8E57DE1DD08C1B00F84204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8E583D1DD090A200F84204 /* ViewController.m in Sources */,
+				3F8E584E1DD0A52900F84204 /* SKNetworkManager.m in Sources */,
+				3F8E583C1DD090A200F84204 /* AppDelegate.m in Sources */,
+				3F8E57E71DD08C1B00F84204 /* main.m in Sources */,
+				3F8E58451DD0922400F84204 /* BBAES.m in Sources */,
+				3F8E58561DD0B5CF00F84204 /* RSA.m in Sources */,
+				3F8E584A1DD0A2C400F84204 /* NSData+Base64.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F8E57F71DD08C1C00F84204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8E58001DD08C1C00F84204 /* SKSecurityClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F8E58021DD08C1C00F84204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8E580B1DD08C1C00F84204 /* SKSecurityClientUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F8E57FD1DD08C1C00F84204 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F8E57E11DD08C1B00F84204 /* SKSecurityClient */;
+			targetProxy = 3F8E57FC1DD08C1C00F84204 /* PBXContainerItemProxy */;
+		};
+		3F8E58081DD08C1C00F84204 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F8E57E11DD08C1B00F84204 /* SKSecurityClient */;
+			targetProxy = 3F8E58071DD08C1C00F84204 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F8E57EE1DD08C1B00F84204 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F8E57EF1DD08C1B00F84204 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F8E57F31DD08C1B00F84204 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F8E57F41DD08C1B00F84204 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F8E580D1DD08C1C00F84204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3F8E580E1DD08C1C00F84204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F8E58101DD08C1C00F84204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 602FFB8F78B5EA0817ABAEE3 /* Pods-SKSecurityClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SKSecurityClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avtobus.SKSecurityClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F8E58111DD08C1C00F84204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7809CF597778FB4CCF5949A2 /* Pods-SKSecurityClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SKSecurityClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avtobus.SKSecurityClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3F8E58131DD08C1C00F84204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 476DA140B1E888CD029D0DEF /* Pods-SKSecurityClientTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SKSecurityClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avtobus.SKSecurityClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SKSecurityClient.app/SKSecurityClient";
+			};
+			name = Debug;
+		};
+		3F8E58141DD08C1C00F84204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF5ED00D2EF79338EAB7683B /* Pods-SKSecurityClientTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SKSecurityClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avtobus.SKSecurityClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SKSecurityClient.app/SKSecurityClient";
+			};
+			name = Release;
+		};
+		3F8E58161DD08C1C00F84204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 699692A27B5F858459584A88 /* Pods-SKSecurityClientUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = SKSecurityClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avtobus.SKSecurityClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SKSecurityClient;
+			};
+			name = Debug;
+		};
+		3F8E58171DD08C1C00F84204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53FC6729EBDC569B5777A115 /* Pods-SKSecurityClientUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = SKSecurityClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avtobus.SKSecurityClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SKSecurityClient;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F8E57DD1DD08C1B00F84204 /* Build configuration list for PBXProject "SKSecurityClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F8E580D1DD08C1C00F84204 /* Debug */,
+				3F8E580E1DD08C1C00F84204 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F8E580F1DD08C1C00F84204 /* Build configuration list for PBXNativeTarget "SKSecurityClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F8E58101DD08C1C00F84204 /* Debug */,
+				3F8E58111DD08C1C00F84204 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F8E58121DD08C1C00F84204 /* Build configuration list for PBXNativeTarget "SKSecurityClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F8E58131DD08C1C00F84204 /* Debug */,
+				3F8E58141DD08C1C00F84204 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F8E58151DD08C1C00F84204 /* Build configuration list for PBXNativeTarget "SKSecurityClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F8E58161DD08C1C00F84204 /* Debug */,
+				3F8E58171DD08C1C00F84204 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F8E57DA1DD08C1B00F84204 /* Project object */;
+}
